@@ -17,7 +17,7 @@
       <file leaf-file-name="ShoppingBasket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shopping/ShoppingBasket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="102">
               <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="e#283#284#0" expanded="true" />
@@ -40,14 +40,14 @@
       <file leaf-file-name="TestShoppingBasket.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/specs/TestShoppingBasket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="42" column="64" lean-forward="false" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+            <state relative-caret-position="418">
+              <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#648#649#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,27 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestShoppingBasket.testAddItemToBasket">
-    <configuration name="TestItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="ShoppingBasket" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestItem" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestShoppingBasket.testRemoveItemFromBasket">
     <configuration name="TestShoppingBasket.testAddItemToBasket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="ShoppingBasket" />
@@ -236,6 +216,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestShoppingBasket" />
       <option name="METHOD_NAME" value="testNoLoyaltyCardOnCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestShoppingBasket.testRemoveItemFromBasket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ShoppingBasket" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestShoppingBasket" />
+      <option name="METHOD_NAME" value="testRemoveItemFromBasket" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -330,19 +330,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestItem" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testEmptyOnCreate" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testNoLoyaltyCardOnCreate" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testAddLoyaltyCard" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testAddItemToBasket" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testEmptyOnCreate" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testNoLoyaltyCardOnCreate" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testAddLoyaltyCard" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testAddItemToBasket" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testRemoveItemFromBasket" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testAddItemToBasket" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testAddLoyaltyCard" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testNoLoyaltyCardOnCreate" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testEmptyOnCreate" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestItem" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testRemoveItemFromBasket" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testAddItemToBasket" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testAddLoyaltyCard" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testNoLoyaltyCardOnCreate" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestShoppingBasket.testEmptyOnCreate" />
       </list>
     </recent_temporary>
   </component>
@@ -372,6 +372,12 @@
     <history-entry file="TestShoppingBasket_testAddItemToBasket - 2017.08.27 at 19h 17m 04s.xml">
       <configuration name="TestShoppingBasket.testAddItemToBasket" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestShoppingBasket_testAddItemToBasket - 2017.08.27 at 19h 20m 48s.xml">
+      <configuration name="TestShoppingBasket.testAddItemToBasket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestShoppingBasket_testAddItemToBasket - 2017.08.27 at 19h 20m 55s.xml">
+      <configuration name="TestShoppingBasket.testAddItemToBasket" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="TestShoppingBasket_testAddLoyaltyCard - 2017.08.27 at 19h 15m 10s.xml">
       <configuration name="TestShoppingBasket.testAddLoyaltyCard" configurationId="JUnit" />
     </history-entry>
@@ -380,6 +386,12 @@
     </history-entry>
     <history-entry file="TestShoppingBasket_testNoLoyaltyCardOnCreate - 2017.08.27 at 19h 14m 10s.xml">
       <configuration name="TestShoppingBasket.testNoLoyaltyCardOnCreate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestShoppingBasket_testRemoveItemFromBasket - 2017.08.27 at 19h 22m 24s.xml">
+      <configuration name="TestShoppingBasket.testRemoveItemFromBasket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestShoppingBasket_testRemoveItemFromBasket - 2017.08.27 at 19h 23m 00s.xml">
+      <configuration name="TestShoppingBasket.testRemoveItemFromBasket" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -392,7 +404,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -448,7 +460,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shopping/ShoppingBasket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="102">
           <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="e#283#284#0" expanded="true" />
@@ -469,14 +481,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/specs/TestShoppingBasket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="42" column="64" lean-forward="false" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+        <state relative-caret-position="418">
+          <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -2,9 +2,7 @@ import org.junit.Test;
 import shopping.*;
 import org.junit.Before;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class TestShoppingBasket {
 
@@ -41,6 +39,17 @@ public class TestShoppingBasket {
     public void testAddItemToBasket(){
         fredsBasket.addItemToBasket( banana );
         assertEquals( 1, fredsBasket.getNumberItemsInBasket() );
+        Item item = fredsBasket.getBasket().get(0);
+        assertSame( banana, item );
     }
 
+    @Test
+    public void testRemoveItemFromBasket(){
+        fredsBasket.addItemToBasket( banana );
+        fredsBasket.addItemToBasket( orange );
+        fredsBasket.addItemToBasket( onePintMilk );
+        assertEquals( 3, fredsBasket.getNumberItemsInBasket() );
+        fredsBasket.removeItemFromBasket( orange );
+        assertEquals( 2, fredsBasket.getNumberItemsInBasket() );
+    }
 }
