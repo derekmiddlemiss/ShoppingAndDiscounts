@@ -3,6 +3,7 @@ import org.junit.Test;
 import shopping.*;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 public class TestBOGOF {
 
@@ -36,5 +37,9 @@ public class TestBOGOF {
         assertEquals( -0.20, totalModifier, 0.001 );
     }
 
+    @Test
+    public void testGetOrder(){
+        assertEquals( 1, bananaBOGOF.getOrder() );
+    }
 
 }
