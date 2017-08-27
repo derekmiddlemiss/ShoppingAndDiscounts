@@ -4,15 +4,15 @@ public class BOGOF implements Discount {
 
     String itemID;
     Double price;
-    int order;
+    int precedence;
 
     public BOGOF( String itemID, Double price ){
         this.itemID = itemID;
         this.price = price;
-        this.order = 1;
+        this.precedence = 1;
     }
 
-    public Double getTotalModifier( ShoppingBasket basket ) {
+    public Double getNewSubtotal( ShoppingBasket basket, Double oldSubtotal ) {
         int countDiscountedItems = 0;
         for ( Item item : basket.getBasket() ){
 
@@ -22,11 +22,11 @@ public class BOGOF implements Discount {
 
         }
 
-        return -1 * ( countDiscountedItems / 2 ) * this.price;
+        return oldSubtotal - ( countDiscountedItems / 2 ) * this.price;
     }
 
-    public int getOrder(){
-        return this.order;
+    public int getPrecedence(){
+        return this.precedence;
     }
 
 }

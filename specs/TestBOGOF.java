@@ -3,7 +3,6 @@ import org.junit.Test;
 import shopping.*;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 
 public class TestBOGOF {
 
@@ -32,14 +31,29 @@ public class TestBOGOF {
     }
 
     @Test
-    public void testGetTotalModifier(){
-        Double totalModifier = bananaBOGOF.getTotalModifier( basket );
-        assertEquals( -0.20, totalModifier, 0.001 );
+    public void testGetNewSubtotal__ThreeBananasSoOneBananaFree(){
+        Double newSubtotal = bananaBOGOF.getNewSubtotal( basket, 3.40 );
+        assertEquals( 3.20, newSubtotal, 0.001 );
     }
 
     @Test
-    public void testGetOrder(){
-        assertEquals( 1, bananaBOGOF.getOrder() );
+    public void testGetNewSubtotal__TwoBananasSoOneBananaFree(){
+        basket.removeItemFromBasket( bananaThree );
+        Double newSubtotal = bananaBOGOF.getNewSubtotal( basket, 3.20 );
+        assertEquals( 3.00, newSubtotal, 0.001 );
+    }
+
+    @Test
+    public void testGetNewSubtotal__OneBananaSoNoFreeBanana(){
+        basket.removeItemFromBasket( bananaTwo );
+        basket.removeItemFromBasket( bananaThree );
+        Double newSubtotal = bananaBOGOF.getNewSubtotal( basket, 3.00 );
+        assertEquals( 3.00, newSubtotal, 0.001 );
+    }
+
+    @Test
+    public void testGetPrecedence(){
+        assertEquals( 1, bananaBOGOF.getPrecedence() );
     }
 
 }

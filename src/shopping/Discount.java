@@ -2,6 +2,6 @@ package shopping;
 
 public interface Discount {
 
-    Double getTotalModifier( ShoppingBasket basket );
+    Double getNewSubtotal( ShoppingBasket basket, Double oldSubtotal );
 
 }
