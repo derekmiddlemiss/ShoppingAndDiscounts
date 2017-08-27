@@ -2,8 +2,6 @@ import org.junit.Before;
 import org.junit.Test;
 import shopping.*;
 
-import java.math.BigDecimal;
-
 import static org.junit.Assert.assertEquals;
 
 public class TestItem {
