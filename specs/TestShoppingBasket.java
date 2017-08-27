@@ -51,5 +51,19 @@ public class TestShoppingBasket {
         assertEquals( 3, fredsBasket.getNumberItemsInBasket() );
         fredsBasket.removeItemFromBasket( orange );
         assertEquals( 2, fredsBasket.getNumberItemsInBasket() );
+        Item firstItem = fredsBasket.getBasket().get(0);
+        Item secondItem = fredsBasket.getBasket().get(1);
+        assertSame( banana, firstItem );
+        assertSame( onePintMilk, secondItem );
+
+    }
+
+    @Test
+    public void testRemoveAllItemsFromBasket(){
+        fredsBasket.addItemToBasket( banana );
+        fredsBasket.addItemToBasket( orange );
+        fredsBasket.addItemToBasket( onePintMilk );
+        fredsBasket.removeAllItemsFromBasket();
+        assertEquals( 0, fredsBasket.getNumberItemsInBasket() );
     }
 }

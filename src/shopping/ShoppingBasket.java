@@ -37,9 +37,7 @@ public class ShoppingBasket {
     }
 
     public void removeAllItemsFromBasket(){
-        for ( Item item : basket ){
-            this.basket.remove( item );
-        }
+            this.basket.removeAll( this.basket );
     }
 
 }
