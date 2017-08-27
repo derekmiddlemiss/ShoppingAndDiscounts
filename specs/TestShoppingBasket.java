@@ -37,4 +37,10 @@ public class TestShoppingBasket {
         assertTrue( fredsBasket.getLoyaltyCard() );
     }
 
+    @Test
+    public void testAddItemToBasket(){
+        fredsBasket.addItemToBasket( banana );
+        assertEquals( 1, fredsBasket.getNumberItemsInBasket() );
+    }
+
 }
