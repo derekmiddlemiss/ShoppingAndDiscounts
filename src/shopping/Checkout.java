@@ -45,7 +45,7 @@ public class Checkout {
             for ( int i = 0; i < numberOfDiscounts; i++ ){
                 Discount discount = this.discounts.getDiscountAtIndex( i );
                 total = discount.getNewSubtotal( basket, total );
-                System.out.println( "Discount: " + discount.toString() + " Subtotal = £" + total.toString() );
+                System.out.println( "Discount: " + discount.getName() + " Subtotal = £" + total.toString() );
             }
 
             System.out.println( "Total = £" + total.toString() );

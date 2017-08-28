@@ -1,10 +1,9 @@
 package shopping;
 
-public class Loyalty implements Discount {
-
-    int precedence;
+public class Loyalty extends Discount {
 
     public Loyalty(){
+        super("Loyalty discount");
         this.precedence = 3;
     }
 
@@ -15,10 +14,6 @@ public class Loyalty implements Discount {
             return oldSubtotal;
         }
 
-    }
-
-    public int getPrecedence() {
-        return this.precedence;
     }
 
 }

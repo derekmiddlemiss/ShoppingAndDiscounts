@@ -1,9 +1,22 @@
 package shopping;
 
-public interface Discount {
+public abstract class Discount {
 
-    Double getNewSubtotal( ShoppingBasket basket, Double oldSubtotal );
+    String name;
+    int precedence;
 
-    int getPrecedence();
+    public Discount( String name ){
+        this.name = name;
+    }
+
+    public abstract Double getNewSubtotal( ShoppingBasket basket, Double oldSubtotal );
+
+    public int getPrecedence(){
+        return this.precedence;
+    }
+
+    public String getName(){
+        return this.name;
+    }
 
 }

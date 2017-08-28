@@ -33,7 +33,7 @@ public class TestCheckout {
         basket.addItemToBasket(orange);
         basket.addItemToBasket(coffee);
         basket.addItemToBasket(TV);
-        bananaBOGOF = new BOGOF( "Banana", 0.20 );
+        bananaBOGOF = new BOGOF( "Banana", 0.20, "Two for one on bananas" );
         totalOverTwenty = new TotalOverTwenty();
         loyalty = new Loyalty();
         bleepy = new Checkout();

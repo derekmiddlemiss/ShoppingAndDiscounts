@@ -16,8 +16,8 @@ public class TestDiscountList {
 
     @Before
     public void before(){
-        bananaBOGOF = new BOGOF( "Banana", 0.20);
-        plumBOGOF = new BOGOF( "Plum", 0.15 );
+        bananaBOGOF = new BOGOF( "Banana", 0.20, "Two for one on bananas");
+        plumBOGOF = new BOGOF( "Plum", 0.15, "Two for one on plums" );
         totalOverTwenty = new TotalOverTwenty();
         loyalty = new Loyalty();
         list = new DiscountList();

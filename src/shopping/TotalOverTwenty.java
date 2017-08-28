@@ -1,10 +1,9 @@
 package shopping;
 
-public class TotalOverTwenty implements Discount {
+public class TotalOverTwenty extends Discount {
 
-    int precedence;
-
-    public TotalOverTwenty(){
+    public TotalOverTwenty() {
+        super( "Total over £20 discount" );
         this.precedence = 2;
     }
 
@@ -14,10 +13,6 @@ public class TotalOverTwenty implements Discount {
         } else {
             return oldSubtotal;
         }
-    }
-
-    public int getPrecedence() {
-        return this.precedence;
     }
 
 }

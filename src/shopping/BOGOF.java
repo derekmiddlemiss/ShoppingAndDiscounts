@@ -1,12 +1,12 @@
 package shopping;
 
-public class BOGOF implements Discount {
+public class BOGOF extends Discount {
 
     String itemID;
     Double price;
-    int precedence;
 
-    public BOGOF( String itemID, Double price ){
+    public BOGOF( String itemID, Double price, String name ){
+        super( name );
         this.itemID = itemID;
         this.price = price;
         this.precedence = 1;
@@ -23,10 +23,6 @@ public class BOGOF implements Discount {
         }
 
         return oldSubtotal - ( countDiscountedItems / 2 ) * this.price;
-    }
-
-    public int getPrecedence(){
-        return this.precedence;
     }
 
 }

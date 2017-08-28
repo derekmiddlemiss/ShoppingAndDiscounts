@@ -27,7 +27,7 @@ public class TestBOGOF {
         basket.addItemToBasket( bananaThree );
         basket.addItemToBasket( orange );
         basket.addItemToBasket( coffee );
-        bananaBOGOF = new BOGOF( "Banana", 0.20 );
+        bananaBOGOF = new BOGOF( "Banana", 0.20, "Two for one on bananas" );
     }
 
     @Test
